@@ -1,0 +1,104 @@
+*{
+    margin:0px;
+    font-family: 'Roboto', sans-serif;
+     box-sizing: border-box;
+  }
+  
+
+
+  .nav-bar{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    background-color:white;
+    padding:5px
+  }
+  
+  .logo{
+    height:78px;
+    width:78px;
+    border-radius:50%;
+    animation: move 10s infinite;
+  }
+  
+  @keyframes move{
+    50%{transform:rotate(360deg) ;}
+  }
+  
+  .logo-container{
+    display:flex;
+    flex-direction:row;
+  }
+  .logo-name{
+    margin-top:30px;
+    margin-left:8px;
+    color:rgb(96, 12, 126);
+  }
+  .name-list{
+    font-weight:600;
+    list-style: none;
+    margin-left:55px;
+    cursor:pointer;
+    position:relative;
+    font-size:large;
+    color:rgb(200, 190, 190);
+  }
+  .name-list:after {
+    content: "";
+    height: 3px;
+    background-color:rgb(96, 12, 126);
+    bottom: 21px;
+    position: absolute;
+    left: 0px;
+    transition: ease-in-out 250ms;
+  }
+  
+  .name-list:hover:after {
+    width:100%;
+  
+  }
+  
+  .name-list:hover{
+    color:black;
+  }
+  
+  .unorder-list{
+    display:flex;
+    flex-direction:row;
+    margin-top:32px; 
+  }
+  .language{
+    background-color: transparent;
+    color:rgb(96, 12, 126);
+    margin-left:55px;
+    font-weight:600;
+    outline: none;
+    border-style: none;
+    font-size:large;
+    padding:2px;
+  }
+  .language:hover{
+    color:rgb(35, 3, 47)
+  }
+  .french{
+    color:black;
+  }
+  .lan{
+    margin-top:28px;
+  }
+  .settings{
+    margin-top:32px;
+    font-size:medium;
+    font-weight:600;
+    color:rgb(96, 12, 126);
+    margin-right:8px;
+    cursor:pointer;
+  }
+  .haha{
+    display:flex;
+    flex-direction:row;
+
+  }
+  .gear{
+    margin-top:32px;
+  }
